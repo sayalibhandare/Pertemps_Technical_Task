@@ -53,13 +53,16 @@ _search = {
                 matchingParents.push(itemTitles[matchTitle]);
             }
         }
-        _search.listItems
-            //.removeClass("pagination-d-none")
-            .addClass("search-d-none");
+        _search.listItems.addClass("search-d-none");
+            
 
         matchingParents.forEach(function (parent) {
             parent.removeClass("search-d-none");
         });
+
+       // _search.finalNumberedSearch();
+
+        _finalResult.initResults();
     },
 
     clearSearch: function () {
@@ -100,6 +103,7 @@ _typeFilter = {
 
             // Now, firstly lets hide & unpaginate all itmes
             list.find("li").addClass("type-d-none");
+            
 
             // And now, as long as we have some types selected
             if (selectedTypes.length) {
@@ -115,7 +119,10 @@ _typeFilter = {
             } else {
                 list.find("li").removeClass("type-d-none");
             }
+            _finalResult.initResults();
         });
+
+        
 
         /***
          * Will get all available types from the filter buttons into an array */
@@ -157,8 +164,34 @@ _sortByFilter = {
         }
         // Update the list with sorted items
         list.empty().append(listItems);
+
+       // _finalResult.initResults();
     },
 };
+
+_finalResult = {
+    initResults: function () {
+        var List = $(".filtered-list-wrapper #list");
+        var items = List.find("li");
+        var result = $("#result");
+        var specificClass = "list-item"; // Change this to your desired class
+
+        var resultNumber = items.filter(function() {
+            // Get the class attribute value and split it into an array
+            var classes = $(this).attr('class') ? $(this).attr('class').split(' ') : [];
+            
+            // Check if the classes array contains only the specific class
+            return classes.length === 1 && classes[0] === specificClass;
+        }).length;
+
+        // var resultNumber = items.not(".search-d-none").not(".type-d-none").length;
+
+        console.log(resultNumber);
+        result.find("#result-number").text(resultNumber);
+        result.addClass("active");
+    }
+};
+
 
 
 // Initalizers

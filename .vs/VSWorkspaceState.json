@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers"
   ],
-  "SelectedNode": "\\TechnicalTest.sln",
+  "SelectedNode": "\\Controllers\\JobController.cs",
   "PreviewInSolutionExplorer": false
 }

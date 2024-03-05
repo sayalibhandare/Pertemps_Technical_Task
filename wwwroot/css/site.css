@@ -77,13 +77,21 @@ ul#list {
     position:relative;
 
 }
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="number"] {
     width:calc(100% - 150px);
     border-radius:10px;
     margin-right:10px;
     padding:6px 12px;
     border:0;
     border:1px solid #ccc;
+   
+}
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form input[type="number"] {
+    margin-bottom: 15px;
 }
 
 .btn {
@@ -160,6 +168,14 @@ input[type="text"] {
 .type-d-none, .date-d-none, .search-d-none, .pagination-d-none {
     display: none;
 }
+#result{
+    visibility: hidden;
+}
+#result.active{
+    visibility: visible;
+    text-align: center;
+}
+
 
 
 

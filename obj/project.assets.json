@@ -9668,11 +9668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sayali.sarode\\Desktop\\TechnicalTest\\TechnicalTest.csproj",
+      "projectUniqueName": "C:\\Users\\sayali.sarode\\source\\repos\\sayalibhandare\\Pertemps_Technical_Task\\TechnicalTest.csproj",
       "projectName": "TechnicalTest",
-      "projectPath": "C:\\Users\\sayali.sarode\\Desktop\\TechnicalTest\\TechnicalTest.csproj",
+      "projectPath": "C:\\Users\\sayali.sarode\\source\\repos\\sayalibhandare\\Pertemps_Technical_Task\\TechnicalTest.csproj",
       "packagesPath": "C:\\Users\\sayali.sarode\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sayali.sarode\\Desktop\\TechnicalTest\\obj\\",
+      "outputPath": "C:\\Users\\sayali.sarode\\source\\repos\\sayalibhandare\\Pertemps_Technical_Task\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sayali.sarode\\AppData\\Roaming\\NuGet\\NuGet.Config",

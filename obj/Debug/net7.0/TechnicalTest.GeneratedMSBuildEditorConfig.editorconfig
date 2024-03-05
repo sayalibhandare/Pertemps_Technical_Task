@@ -9,17 +9,25 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TechnicalTest
 build_property.RootNamespace = TechnicalTest
-build_property.ProjectDir = C:\Users\sayali.sarode\Source\Repos\sayalibhandare\Pertemps_Technical_Task\
+build_property.ProjectDir = C:\Users\sayali.sarode\source\repos\sayalibhandare\Pertemps_Technical_Task\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\sayali.sarode\Source\Repos\sayalibhandare\Pertemps_Technical_Task
+build_property.MSBuildProjectDirectory = C:\Users\sayali.sarode\source\repos\sayalibhandare\Pertemps_Technical_Task
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/sayali.sarode/source/repos/sayalibhandare/Pertemps_Technical_Task/Views/Careers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZWVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sayali.sarode/source/repos/sayalibhandare/Pertemps_Technical_Task/Views/Form/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sayali.sarode/source/repos/sayalibhandare/Pertemps_Technical_Task/Views/Form/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sayali.sarode/source/repos/sayalibhandare/Pertemps_Technical_Task/Views/Home/Index.cshtml]
