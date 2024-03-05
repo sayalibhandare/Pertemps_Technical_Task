@@ -37,7 +37,7 @@ namespace TechnicalTest.Controllers
         // POST: FormController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection, IFormFile postedFile)
+        public ActionResult Create(IFormCollection collection)
         {
             try
             {
@@ -46,23 +46,7 @@ namespace TechnicalTest.Controllers
                 data.Surname = collection["surname"];
                 data.Email = collection["email"];
                 data.Phone = collection["phone"];
-
-
                 ViewBag.users = data;
-
-                // string wwwPath = this.Environment.WebRootPath;
-                // string contentPath = this.Environment.ContentRootPath;
-
-                // string path = Path.Combine(this.Environment.WebRootPath, "Uploads");
-                // if (!Directory.Exists(path))
-                // {
-                //     Directory.CreateDirectory(path);
-                // }
-                // string fileName = Path.GetFileName(postedFile.FileName);
-
-
-                // Console.WriteLine(data.Name + " " + data.Surname + " " + data.Email + " " + data.Phone + " "+fileName);
-                // //return RedirectToAction(nameof(Index));
 
                 return View("Index");
             }

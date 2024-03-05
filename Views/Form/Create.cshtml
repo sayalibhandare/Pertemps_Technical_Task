@@ -15,19 +15,19 @@
         <form method="post" enctype="multipart/form-data" asp-controller="Form" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group sb-2">
-                <input type="text" placeholder="Name" name="name" />
+                <input type="text" placeholder="Name" name="name" required/>
             </div>
             <div class="form-group sb-2">
-                <input type="text" placeholder="Surname" name="surname" />
+                <input type="text" placeholder="Surname" name="surname" required/>
             </div>
             <div class="form-group sb-2">
-                <input type="email" placeholder="Email" name="email" />
+                <input type="email" placeholder="Email" name="email" required/>
             </div>
             <div class="form-group sb-2">
-                <input type="number" placeholder="Phone number" name="phone" />
+                <input type="number" placeholder="Phone number" name="phone" required/>
             </div>
             <div class="form-group sb-2">
-                <input type="file" name="postedFiles" />
+                <input type="file" name="postedFiles" required/>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
