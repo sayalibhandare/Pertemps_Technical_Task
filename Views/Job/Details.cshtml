@@ -1,0 +1,21 @@
+﻿@model TechnicalTest.Models.Job
+
+
+<div class="page-banner">
+    <h2 class="text-white">Job Details</h2>
+</div>
+
+<div class="container">
+    <div class="job padding-medium">
+        <h2>@ViewBag.Job.job_title</h2>
+        <p class="icon pin">Job Id: @ViewBag.Job.id</p>
+        <p class="icon location">Location: @ViewBag.Job.location </p>
+        <p class="icon pound">Salary: @ViewBag.Job.salary_to </p>
+        <p class="icon timer">Posted  @ViewBag.Job.postAge ago</p>
+        <p class="icon category">@ViewBag.Job.category</p>
+    </div>
+    <div class="job padding-medium">
+        <p>@ViewBag.Job.job_description</p>
+    </div>
+</div>
+
